@@ -1,5 +1,6 @@
 import csv
 
+from pathlib import Path
 
 def load_students(filename):
     """
@@ -35,7 +36,7 @@ def find_student_by_id(students, target_id):
 
 
 def main():
-    filename = "student_records_5000.csv"
+    filename = Path(__file__).parent.parent / "data" / "student_records_5000.csv"
 
     students = load_students(filename)
 
