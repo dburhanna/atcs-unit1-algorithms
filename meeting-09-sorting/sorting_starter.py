@@ -28,5 +28,5 @@ for data in test_cases:
     print("Selection:", selection_result)
     print("Insertion:", insertion_result)
 
-    assert selection_result == expected
-    assert insertion_result == expected
+    assert selection_result == expected, f"Expected {expected}, but got {selection_result}"
+    assert insertion_result == expected, f"Expected {expected}, but got {insertion_result}"
