@@ -1,9 +1,17 @@
+#include <iostream>
 #include <set>
-#include <map>
+
 using namespace std;
-int main(){
- set<int> orderedValues;
- map<int,int> orderedMap;
- // TODO: compare ordered and unordered containers.
- return 0;
+
+int main() {
+    set<int> values = {50, 25, 75, 10, 35};
+
+    for (int value : values) {
+        cout << value << " ";
+    }
+
+    cout << endl;
+    cout << (values.find(35) != values.end());
+
+    return 0;
 }
